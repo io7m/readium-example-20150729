@@ -23,7 +23,7 @@ The steps to build are as follows:
    case, I use a symbolic link to the checked out git repository:
 
 ```
-  $ ln -s $HOME/git/com.github/readium/readium-sdk readium-sdk`
+  $ ln -s $HOME/git/com.github/readium/readium-sdk readium-sdk
   $ ls readium-sdk/
     BuildTools
     MakeHeaders.js
@@ -41,13 +41,13 @@ The steps to build are as follows:
    We'll replace this with something slightly more intelligent
    such as git submodules later.
 
-2. Run `./android-toolchains-make.sh`. This uses the NDK's
+3. Run `./android-toolchains-make.sh`. This uses the NDK's
    standalone compiler feature (see the NDK docs -
    `Building → Standalone Toolchain → Invoking the compiler (the easy way)`)
 
-3. Run `make -f Makefile.android`
+4. Run `make -f Makefile.android`
 
-4. Be buried under compilation errors.
+5. Be buried under compilation errors.
 
 Currently, the compiler flags produced by `./android-includes.sh`
 are obviously not correct: I was in the process of figuring out
